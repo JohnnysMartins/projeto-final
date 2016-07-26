@@ -1,5 +1,25 @@
-
-
+ 
+#busca{
+    width:200px;
+    padding:6px;
+    border: thin solid #ccc;
+    color: #999;
+    font-style: italic;
+}
+#busca:focus{
+    color: #000;
+    font-style:normal;
+    font-weight: bold;
+}
+#submit{
+    width:90px;
+    padding:6px;
+    background: #069;
+    color: #fff;
+}
+#submit:hover{
+    background: #09f;
+}
 
 /*---------------------topo-pagina------------------------*/
 #menu {
