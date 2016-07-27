@@ -4,12 +4,15 @@
         <title>FSBd - Filme</title>
         <meta charset="UTF-8">
         <link href="css/style.css" rel="stylesheet">
+        <script type="text/javascript" src="js/main.js">
+          
+        </script>
     </head>
-    <body>
+    <body onload="preenche();">
         <header id="top-pagina">
-            <form>
-                <input type="text" name="buscar">
-                <input type="submit" value="buscar">
+            <form action="" method="GET">
+                <input type="text" onclick="limpa();" onblur="preenche();" name="palavra" id="busca" value="">
+                <input type="submit" id="submit" value="Buscar">
             </form>
             <nav id="menu">
                 <ul>
