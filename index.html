@@ -4,9 +4,13 @@
         <title>FSBd - Principal</title>
         <meta charset="UTF-8">
         <link href="css/style.css" rel="stylesheet">
-        <script type="text/javascript" src="js/main.js">
-          
-        </script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- jQuery library (served from Google) -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+        <!-- bxSlider Javascript file -->
+        <script src="http://bxslider.com/lib/jquery.bxslider.js"></script>
+        <!-- bxSlider CSS file -->
+        <link href="http://bxslider.com/lib/jquery.bxslider.css" rel="stylesheet" /> 
     </head>
     <body onload="preenche();">
         <header id="top-pagina">
@@ -23,7 +27,18 @@
                     <li><a href="contato.html">Contato</a></a>
                 </ul>    
             </nav>
-            
+         <div class="principal">
+             <ul class="bxslider">
+        <li><img src="https://pixabay.com/static/uploads/photo/2015/11/10/08/31/banner-1036483_960_720.jpg" /></li>
+        <li><img src="https://pixabay.com/static/uploads/photo/2015/11/19/08/51/banner-1050624_960_720.jpg" /></li>
+        <li><img src="https://pixabay.com/static/uploads/photo/2015/09/17/10/31/banner-943868_960_720.jpg" /></li>
+    </ul>
+<script>
+    $(document).ready(function(){
+  $('.bxslider').bxSlider();
+});
+</script>
+         </div>
         </body>
         <div class="content">
             
