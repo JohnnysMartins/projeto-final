@@ -47,11 +47,6 @@
     font-size: 20px;
     display: block;
 }
-.rodape{
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
 #content{
     color: white;
 }

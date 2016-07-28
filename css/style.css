@@ -71,6 +71,15 @@ body{
     border-bottom: 3px solid #0099ff !important;
 }
 /*---------------------rodape------------------------*/
+#footer {
+    margin: 0 auto;
+    padding: 10px;
+    background: #adb1b2;
+    color: white;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
 .rodape{
     background-color: cadetblue;
     position: absolute;
