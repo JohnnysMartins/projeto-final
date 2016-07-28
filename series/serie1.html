@@ -4,8 +4,26 @@
         <title>Game of Thrones</title>
         <meta charset="UTF-8">
         <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/filme-serie.css" rel="stylesheet">
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="http://fancyapps.com/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
+
+        <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+
+        <script type="text/javascript">
 		$(function(){
 			$("#txtBusca").keyup(function(){
 				var texto = $(this).val();
@@ -31,7 +49,56 @@
                     <li><a href="../contato.html">Contato</a></a>
                 </ul>    
             </nav>
-            
+            <div id="conteudo">
+                <h1>Sinopse e detalhes Game of Thrones</h1>
+                <p>Há muito tempo, em um tempo esquecido, uma força destruiu o equilíbrio das estações. Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as forças sobrenaturais correm as portas do Reino dos Sete Reinos. A irmandade da Patrulha da Noite busca proteger o reino de cada criatura que pode vir de lá da Muralha, mas já não tem os recursos necessários para garantir a segurança de todos. Depois de um verão de dez anos, um inverno rigoroso promete chegar com um futuro mais sombrio. Enquanto isso, conspirações e rivalidades correm no jogo político pela disputa do Trono de Ferro, o símbolo do poder absoluto.</p>
+            </div>
+            <div id="galeria">
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/serie1/foto1.jpg" title="primeira foto">
+                    <img src="../img/serie1/foto1.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm8.staticflickr.com/7289/16207238089_0124105172_b.jpg" title="(Eric Goncalves (cathing up again!))">
+                    <img src="../img/serie1/foto2.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto3.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto4.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto5.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto6.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto7.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto8.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="http://farm9.staticflickr.com/8568/16388772452_f4d77a92c7_b.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/serie1/foto9.jpg" alt="" />
+                </a>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $(".fancybox-thumb").fancybox({
+                        prevEffect	: 'none',
+                        nextEffect	: 'none',
+                        helpers	: {
+                            title	: {
+                                type: 'outside'
+                            },
+                            thumbs	: {
+                             width	: 50,
+                             height	: 50
+                            }
+                        }
+                    });
+                });
+    </script>
         </body>
         <div class="content">
             

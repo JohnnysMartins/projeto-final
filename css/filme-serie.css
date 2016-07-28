@@ -16,3 +16,9 @@
     text-decoration: none;
     color: #851944;
 }
+/*---------------------galeria------------------------*/
+#galeria
+    {
+        margin: 0 auto;
+        width: 70%;
+    }

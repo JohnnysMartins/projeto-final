@@ -5,6 +5,7 @@
 }*/
 body{
     background: url(../img/banners.png);
+    color: white;
 }
 
 
@@ -74,11 +75,16 @@ body{
 #footer {
     margin: 0 auto;
     padding: 10px;
-    background: #adb1b2;
     color: white;
     text-align: center;
     float: left;
     width: 100%;
+    background-color: #999;
+    position: relative;
+    color: #FFF;
+    background-image: linear-gradient(135deg, transparent, transparent 14px, rgba(255, 255, 255, 0.1) 14px, rgba(255, 255, 255, 0.1) 15px, transparent 15px, transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
 }
 .rodape{
     background-color: cadetblue;
@@ -122,4 +128,51 @@ body{
 }
 .linkedin:hover{
     background-position: 430px 345px;
+}
+/*---------------------blog------------------------*/
+.blog {
+    
+    position: relative;
+    color: #FFF;
+}
+.blog small {
+    position: relative;
+    top: -2em;
+}
+.blog li {
+    width: 30%;
+}
+.blog li a {
+    color: #FCF;
+    padding: .5em;
+    display: block;
+}
+.blog .inicio-post {
+    position: absolute;
+    top: 4em;
+    height: 8em;
+    left: 30%;
+    right: 4em;
+    background-color: #F2FFFC;
+    color: #000;
+    padding: 1.5em;
+    display: none;
+}
+.blog a:hover + .inicio-post,
+.blog a:focus + .inicio-post {
+    display: block;
+}
+.blog a:hover,
+.blog a:focus {
+    background-color: #F2FFFC;
+    color: #F26;
+}
+.secao-inicio {
+    padding: 2em;
+}
+.secao-inicio h2 {
+    font-size: 3em;
+    text-transform: uppercase;
+    margin-bottom: .5em;
+    text-shadow: 5px 5px #000;
 }

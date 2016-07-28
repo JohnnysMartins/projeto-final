@@ -4,7 +4,25 @@
         <title>Harry Potter e as Relíquias da Morte - Parte 2</title>
         <meta charset="UTF-8">
         <link href="../css/style.css" rel="stylesheet">
-             <script type="text/javascript">
+        <link href="../css/filme-serie.css" rel="stylesheet">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+        <!-- Add mousewheel plugin (this is optional) -->
+        <script type="text/javascript" src="http://fancyapps.com/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+        <!-- Add fancyBox -->
+        <link rel="stylesheet" href="fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/jquery.fancybox.pack.js"></script>
+
+        <!-- Optionally add helpers - button, thumbnail and/or media -->
+        <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-buttons.js"></script>
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-media.js"></script>
+
+        <link rel="stylesheet" href="fancybox/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+        <script type="text/javascript" src="fancybox/helpers/jquery.fancybox-thumbs.js"></script>
+        <script type="text/javascript">
 		$(function(){
 			$("#txtBusca").keyup(function(){
 				var texto = $(this).val();
@@ -30,6 +48,47 @@
                     <li><a href="../contato.html">Contato</a></a>
                 </ul>    
             </nav>
+            <div id="conteudo">
+                <h1>SINOPSE E DETALHES</h1>
+                <p>Harry Potter (Daniel Radcliffe) e seus amigos Rony Weasley (Rupert Grint) e Hermione Granger (Emma Watson) seguem à procura das horcruxes. O objetivo do trio é encontrá-las e, em seguida, destruí-las, de forma a eliminar lorde Voldemort (Ralph Fiennes) de uma vez por todas. Com a ajuda do duende Grampo (Warwick Davis), eles entram no banco Gringotes de forma a invadir o cofre de Bellatrix Lestrange (Helena Bonham Carter). De lá retornam ao castelo de Hogwarts, onde precisam encontrar mais uma horcrux. Paralelamente, Voldemort prepara o ataque definitivo ao castelo.</p>
+            </div>
+            <div id="galeria">
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/filme10/foto1.jpg" title="primeira foto">
+                    <img src="../img/filme10/foto1.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/filme10/foto2.jpeg" title="(Eric Goncalves (cathing up again!))">
+                    <img src="../img/filme10/foto2.jpeg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/filme10/foto3.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/filme10/foto3.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/filme10/foto4.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/filme10/foto4.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/filme10/foto5.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/filme10/foto5.jpg" alt="" />
+                </a>
+                <a class="fancybox-thumb" rel="fancybox-thumb" href="../img/filme10/foto6.jpg" title="Arctic Paradise (Tom Draxler)">
+                    <img src="../img/filme10/foto6.jpg" alt="" />
+                </a>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $(".fancybox-thumb").fancybox({
+                        prevEffect	: 'none',
+                        nextEffect	: 'none',
+                        helpers	: {
+                            title	: {
+                                type: 'outside'
+                            },
+                            thumbs	: {
+                             width	: 50,
+                             height	: 50
+                            }
+                        }
+                    });
+                });
+    </script>
             
         </body>
         <div class="content">
