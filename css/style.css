@@ -1,12 +1,12 @@
  
-#busca{
+#txtBusca{
     width:200px;
     padding:6px;
     border: thin solid #ccc;
     color: #999;
     font-style: italic;
 }
-#busca:focus{
+#txtBusca:focus{
     color: #000;
     font-style:normal;
     font-weight: bold;
@@ -30,7 +30,7 @@
     padding: 20px 20px 0 20px;
     text-align: center;
 }
-#top-pagina form{
+#txtBusca{
     float: right;
     margin: 10px;
 }

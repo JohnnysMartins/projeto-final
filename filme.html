@@ -5,16 +5,25 @@
         <meta charset="UTF-8">
         <link href="css/style.css" rel="stylesheet">
         <link href="css/filme-serie.css" rel="stylesheet">
-        <script type="text/javascript" src="js/main.js">
-          
-        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$("#txtBusca").keyup(function(){
+				var texto = $(this).val();
+		
+				$("#ulItens li").css("display", "inline-block");
+				$("#ulItens li").each(function(){
+					if($(this).text().toUpperCase().indexOf(texto.toUpperCase()) < 0)
+   						$(this).css("display", "none");
+				});
+			});
+		});
+    </script>
+
     </head>
-    <body onload="preenche();">
+    <body>
         <header id="top-pagina">
-                <form action="" method="GET">
-                    <input type="text" onclick="limpa();" onblur="preenche();" name="palavra" id="busca" value="">
-                    <input type="submit" id="submit" value="Buscar">
-                </form>
+                <input type="text" id="txtBusca" placeholder="Busca..."/> 
             </header>
 
             <nav id="menu">
@@ -26,7 +35,7 @@
                 </ul>    
             </nav>
             <div class="container">
-                <ul class="lista">
+                <ul class="lista" id="ulItens">
                     <li><a href="filmes/filme1.html">
                         <figure>
                             <img src="img/filme/the-godfather.jpg" alt=" O Poderoso Chefão">
