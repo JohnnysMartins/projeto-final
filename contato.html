@@ -4,6 +4,7 @@
         <title>FSBd - Filme</title>
         <meta charset="UTF-8">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/contato.css" rel="stylesheet">
         <script type="text/javascript" src="js/main.js">
           
         </script>
@@ -14,6 +15,7 @@
                 <input type="text" onclick="limpa();" onblur="preenche();" name="palavra" id="busca" value="">
                 <input type="submit" id="submit" value="Buscar">
             </form>
+        </header>
             <nav id="menu">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -22,8 +24,31 @@
                     <li><a class="active" href="contato.html">Contato</a></a>
                 </ul>    
             </nav>
-            
-        </form>
+            <section id="content">
+            <h1>Contato</h1>
+            <form id="formulario">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" value="">
+                <label>Assunto</label>
+                <select>
+                    <option value="0">Escolha</option>
+                    <option value="1">Sugestão</option>
+                    <option value="2'">Reclamação</option>
+                    <option value="3">Outros</option>
+                </select>
+                <label>Mensagem</label>
+                <textarea></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <aside id="endereco">
+                <strong>Endereço</strong>
+                <address>
+                Av. Agamenon Magalhães, 2121 - Espinheiro Recife-PE - CEP 52.123-000
+                </address>
+                <span>Fone 55 81 3456.3232</span> | <a href="mailto:html5@css3.com.br">html5@css3.com.br</a>
+            </aside>
+        </section>
+</body>
         <div class="content">
             
         </div>
