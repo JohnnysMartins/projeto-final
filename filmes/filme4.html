@@ -4,16 +4,23 @@
         <title>Um Sonho de Liberdade</title>
         <meta charset="UTF-8">
         <link href="../css/style.css" rel="stylesheet">
-        <script type="text/javascript" src="../js/main.js">
-          
-        </script>
+            <script type="text/javascript">
+		$(function(){
+			$("#txtBusca").keyup(function(){
+				var texto = $(this).val();
+		
+				$("#ulItens li").css("display", "inline-block");
+				$("#ulItens li").each(function(){
+					if($(this).text().toUpperCase().indexOf(texto.toUpperCase()) < 0)
+   						$(this).css("display", "none");
+				});
+			});
+		});
+    </script>
     </head>
     <body onload="preenche();">
         <header id="top-pagina">
-            <form action="" method="GET">
-                <input type="text" onclick="limpa();" onblur="preenche();" name="palavra" id="busca" value="">
-                <input type="submit" id="submit" value="Buscar">
-            </form>
+            <input type="text" id="txtBusca" placeholder="Busca..."/> 
         </header>
             <nav id="menu">
                 <ul>
@@ -28,7 +35,7 @@
         <div class="content">
             
         </div>
-        <footer class="rodape">
+        <footer id="footer">
            <div id="base">
                 &copy; FSBd 2016
            </div>
