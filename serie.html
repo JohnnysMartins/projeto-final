@@ -5,11 +5,23 @@
         <meta charset="UTF-8">
         <link href="css/style.css" rel="stylesheet">
         <link rel="stylesheet" type="" href="css/filme-serie.css">
-        <script type="text/javascript" src="js/main.js">
-          
-        </script>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+		$(function(){
+			$("#txtBusca").keyup(function(){
+				var texto = $(this).val();
+		
+				$("#ulItens li").css("display", "inline-block");
+				$("#ulItens li").each(function(){
+					if($(this).text().toUpperCase().indexOf(texto.toUpperCase()) < 0)
+   						$(this).css("display", "none");
+				});
+			});
+		});
+    </script>
+
     </head>
-     <body onload="preenche();">
+     <body>
         <header id="top-pagina">
                 <input type="text" id="txtBusca" placeholder="Busca..."/> 
             </header>
@@ -22,65 +34,65 @@
                 </ul>    
             </nav>
              <div class="container">
-                <ul class="lista">
+                <ul class="lista" id="ulItens">
                     <li><a href="series/serie1.html">
                         <figure>
                             <img src="img/serie/gameofthrones_logo_5BVRmqe.jpg" alt="Game of Thrones">
-                            <figcaption>Há muito tempo, em um tempo esquecido, uma força destruiu o equilíbrio das estações. Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as... </figcaption>
+                            <figcaption>Game of Thrones: Há muito tempo, em um tempo esquecido, uma força destruiu o equilíbrio das estações. Em uma terra onde os verões podem durar vários anos e o inverno toda uma vida, as reivindicações e as... </figcaption>
                         </figure>
                     </a></li>
                     <li><a href="series/serie2.html">
                     <figure>
                         <img src="img/serie/Breaking_Bad_title_card.png" alt="Breaking Bad">
-                        <figcaption>Walter White é um professor de química na casa dos 50 anos que trabalha em uma escola secundária no Novo México. Para atender às necessidades de Skyler, sua esposa grávida, e Walt Junior,... </figcaption>
+                        <figcaption>Breaking Bad: Walter White é um professor de química na casa dos 50 anos que trabalha em uma escola secundária no Novo México. Para atender às necessidades de Skyler, sua esposa grávida, e Walt Junior,... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie3.html">
                     <figure>
                         <img src="img/serie/MP_Slider_Season_10.png" alt="Supernatural">
-                        <figcaption>Desde que era pequeno, Sam Winchester (Jared Padalecki) tentava escapar do próprio passsado. Após a misteriosa morte de Mary (Samantha Smith), o pai de Sam passou a procurar vingança... </figcaption>
+                        <figcaption>Supernatural: Desde que era pequeno, Sam Winchester (Jared Padalecki) tentava escapar do próprio passsado. Após a misteriosa morte de Mary (Samantha Smith), o pai de Sam passou a procurar vingança... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie4.html">
                     <figure>
                         <img src="img/serie/hidiaries_3397_main.jpg" alt="Sherlock">
-                        <figcaption>O dr. John Watson precisa de um lugar para morar em Londres. Ele é apresentado ao detetive Sherlock Holmes e os dois acabam desenvolvendo uma parceria intrigante, na qual a dupla vagará... </figcaption>
+                        <figcaption>Sherlock: O dr. John Watson precisa de um lugar para morar em Londres. Ele é apresentado ao detetive Sherlock Holmes e os dois acabam desenvolvendo uma parceria intrigante, na qual a dupla vagará... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie5.html">
                     <figure>
                         <img src="img/serie/demolidor-2-temp.png" alt="Demolidor">
-                        <figcaption>Matthew Michael Murdock (Charlie Cox) é um jovem atleta e excelente aluno. Ainda na adolescência, um acidente envolvendo um caminhão que carregava lixos tóxicos o deixou cego e fez com... </figcaption>
+                        <figcaption>Demolidor: Matthew Michael Murdock (Charlie Cox) é um jovem atleta e excelente aluno. Ainda na adolescência, um acidente envolvendo um caminhão que carregava lixos tóxicos o deixou cego e fez com... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie6.html">
                     <figure>
                         <img src="img/serie/stranger-things-1.jpg" alt="Stranger Things">
-                        <figcaption>Ambientada em Montauk, Long Island, conta a história de um garoto que desaparece misteriosamente. Enquanto a polícia, a família e os amigos procuram respostas, eles acabam mergulhando em... </figcaption>
+                        <figcaption>Stranger Things: Ambientada em Montauk, Long Island, conta a história de um garoto que desaparece misteriosamente. Enquanto a polícia, a família e os amigos procuram respostas, eles acabam mergulhando em... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie7.html">
                     <figure>
                         <img src="img/serie/htgawm-cover.jpg" alt="How To Get Away With Murder">
-                        <figcaption>Michaela, Wes, Laurel e Patrick são ambiciosos calouros de Direito da prestigiada academia East Coast Law School, onde apenas os melhores alunos podem participar de casos reais. Eles...</figcaption>
+                        <figcaption>How To Get Away With Murder: Michaela, Wes, Laurel e Patrick são ambiciosos calouros de Direito da prestigiada academia East Coast Law School, onde apenas os melhores alunos podem participar de casos reais. Eles...</figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie8.html">
                     <figure>
                         <img src="img/serie/the-walking-dead-affiche-fevrier-2014.jpg" alt="The Walking Dead">
-                        <figcaption>Um Apocalipse provoca uma infestação de zumbis na cidade de Cynthiana, em Kentucky, nos Estados Unidos, e o oficial de polícia Rick Grimes (Andrew Lincoln) descobre que os mortos-vivos... </figcaption>
+                        <figcaption>The Walking Dead: Um Apocalipse provoca uma infestação de zumbis na cidade de Cynthiana, em Kentucky, nos Estados Unidos, e o oficial de polícia Rick Grimes (Andrew Lincoln) descobre que os mortos-vivos... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie9.html">
                     <figure>
                         <img src="img/serie/GreysAnatomy.jpg" alt="Grey's Anatomy">
-                        <figcaption>Meredith Grey (Ellen Pompeo) começa a trabalhar no Seattle Grace Hospital e logo descobre que passou a noite com um dos seus chefes, Dr. Derek Shepherd (Patrick Dempsey). Enquanto... </figcaption>
+                        <figcaption>Grey's Anatomy: Meredith Grey (Ellen Pompeo) começa a trabalhar no Seattle Grace Hospital e logo descobre que passou a noite com um dos seus chefes, Dr. Derek Shepherd (Patrick Dempsey). Enquanto... </figcaption>
                     </figure>
                     </a></li>
                     <li><a href="series/serie10.html">
                     <figure>
                         <img src="img/serie/635852948635579517-1119709349_friends.png" alt="Friends">
-                        <figcaption>Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver... </figcaption>
+                        <figcaption>Friends: Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver... </figcaption>
                     </figure>
                     </a></li>
                 </ul>

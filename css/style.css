@@ -1,4 +1,8 @@
- 
+body{
+    width: 760px;
+} 
+
+
 #txtBusca{
     width:200px;
     padding:6px;
@@ -64,6 +68,12 @@
 /*---------------------rodape------------------------*/
 .rodape{
     background-color: cadetblue;
+    position: absolute;
+    width: 100%;
+}
+#redes{
+    float: right;
+    margin: 10px;
 }
 #redes ul li{
     display: inline-block;
